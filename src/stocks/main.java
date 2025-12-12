@@ -11,7 +11,7 @@ public class main {
 		StockServer neverland = new StockServer();//יצירת ״שרת״ שבוא הנתונים של הבורסה
 		
 	//יצירת תהליכונים לסוחרים
-		Threads t1 = new Threads ("Tami Tan",MICROSOFT, neverland );
+		Threads t1 = new Threads ("Tami Tan",MICROSOFT, neverland);
 		Threads t2 = new Threads("Tim Sruli", APPLE, neverland);
 		Threads t3 = new Threads ("Sima Didas",GOOGLE, neverland);
 		//יצירת תהליכון לעדכון המניות
