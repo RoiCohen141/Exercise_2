@@ -17,20 +17,24 @@ public class main {
 		//יצירת תהליכון לעדכון המניות
 		StockUpdateThread t4 =new StockUpdateThread(neverland);
 
-		//ריצת 4 התהליכונים
-		new Thread(t1).start();
-		new Thread(t2).start();
-		new Thread(t3).start();
-		new Thread(t4).start();
-		/*try {
-			t1.join(); // ה-main thread מחכה ש-t1 יסיים
-			t2.join(); // ה-main thread מחכה ש-t2 יסיים
-			t3.join();
-		} catch(InterruptedException e) {
-			e.printStackTrace();
-		}
-*/
+		// יצירת וריצת 4 התהליכונים
+		Thread th1 = new Thread(t1);
+		Thread th2 = new Thread(t2);
+		Thread th3 = new Thread(t3);
+		Thread th4 = new Thread(t4);
 
+		th1.start();
+		th2.start();
+		th3.start();
+		th4.start();
+
+		try {
+		    th1.join();
+		    th2.join();
+		    th3.join();
+		} catch (InterruptedException e) {
+		    e.printStackTrace();
+		}
 	}
 
 	}

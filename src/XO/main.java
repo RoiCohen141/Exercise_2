@@ -25,6 +25,6 @@ public class main {
             System.out.println("Invalid choice.");
         }
 
-        // scanner.close(); // אפשר, אבל אם יש לך Scanner גם בתוך UserPlayer עדיף לא לסגור פה כדי לא לסגור את System.in באמצע
+        scanner.close(); 
     }
 }

@@ -23,7 +23,7 @@ public class Threads implements Runnable  {
 			System.out.print("Name: " + name + ", " +stock + " Stock: " 
 				 + stockValue + " USD\n");
 			Random random = new Random();
-			int sleepTime = 1000 + random.nextInt(2001);//מנוחה של בין 1000-3000 מילישניות(1-3 שניות)
+			int sleepTime = 1000 + random.nextInt(2001);//מנוחה של בין1-3 שניות
 			try {
 				Thread.sleep(sleepTime);
 			} catch (InterruptedException e) {

@@ -21,12 +21,15 @@ public class Racer implements Runnable{
 	public void go() {
 		Thread.currentThread().setPriority(speed);
 		for (int i = 0; i < 100 ; i++) {
+			if(i==0 )
+				System.out.println("Runner " + id + " start to run");
+			
 			System.out.println("Runner " + id + " ran " + i + " meters");
 		}
-		System.out.println("\nRunner " + id + " ran 100 meters");
+		System.out.println("Runner " + id + " ran 100 meters");
 		
 		int place = track.nextPlace();
-		System.out.println("\n" + getFinishPlace(place));
+		System.out.println("\n" + getFinishPlace(place) + "\n");
 		
 	}	
 	private String getFinishPlace(int place) {
@@ -47,7 +50,6 @@ public class Racer implements Runnable{
 	@Override
 	public void run() {
 		this.go();
-		// TODO Auto-generated method stub
 
 	}
 }
