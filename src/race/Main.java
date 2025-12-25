@@ -1,3 +1,5 @@
+//רועי כהן 2063699993, אביה אטדגי 209253384
+//https://github.com/RoiCohen141/Exercise_2.git
 package race;
 
 public class Main {
